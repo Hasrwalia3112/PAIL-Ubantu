@@ -67,3 +67,24 @@ _start:
 (gdb) layout asm
 (gdb) layout regs
 (gdb) nexti
+
+# Addition of two numbers
+global _start
+
+section .data
+    sum db 0
+
+section .text
+_start:
+    mov ax, 8
+    mov cx, 1
+    add ax, '0'
+    mov [sum], al
+    mov edx, 1
+    mov ecx, sum
+    mov ebx, 1
+    mov eax, 4
+    int 0x80
+    mov eax, 1
+    int 0x80
+
