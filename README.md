@@ -19,6 +19,32 @@ _start:
     mov eax, 1
     int 0x80
 
+#code for Implementation of Basic Arithmetic Operations on 8086 Microprocessor for 8-bit Hex
+Numbers
+
+section .data
+
+result db 0 
+
+section .bss
+section .text
+global _start 
+
+_start:
+
+mov eax, num1 4A
+mov ebx, num2 6B
+
+
+add al, bl 
+
+
+mov [result], al 
+
+
+mov eax, 1 
+xor ebx, ebx 
+int 0x80
 
 
 
@@ -226,3 +252,31 @@ mov eax, 1
 mov ebx, 0
 int 0x80
 
+
+
+#code for Implementation of Basic Arithmetic Operations on 8086 Microprocessor for 8-bit Hex
+Numbers
+
+section .data
+
+result db 0 
+
+section .bss
+section .text
+global _start 
+
+_start:
+
+mov eax, num1 4A
+mov ebx, num2 6B
+
+
+add al, bl 
+
+
+mov [result], al 
+
+
+mov eax, 1 
+xor ebx, ebx 
+int 0x80
