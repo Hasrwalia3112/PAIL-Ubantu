@@ -280,3 +280,8 @@ mov [result], al
 mov eax, 1 
 xor ebx, ebx 
 int 0x80
+
+
+
+#Array Addition of 8 bit numbers using ASM
+
